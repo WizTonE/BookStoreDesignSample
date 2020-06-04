@@ -4,8 +4,7 @@ using System.Text;
 
 namespace BookStore.Core
 {
-    public interface IStore
+    public class StoreStorage : IStoreStorage
     {
-        void CheckOut();
     }
 }

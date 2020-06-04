@@ -30,6 +30,11 @@ namespace BookStore.Core
                 Pool.Add(store, new Store());
             return Pool[store];
         }
+
+        public void CheckOut()
+        {
+            throw new NotImplementedException();
+        }
         #endregion
     }
 }
