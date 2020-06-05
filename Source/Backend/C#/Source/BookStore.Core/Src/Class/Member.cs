@@ -37,6 +37,11 @@ namespace BookStore.Core
             MemberInfo = MemberRepository.Login(memberUdt);
             return MemberInfo;
         }
+
+        public void Pickup(Book book)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
     }
 }

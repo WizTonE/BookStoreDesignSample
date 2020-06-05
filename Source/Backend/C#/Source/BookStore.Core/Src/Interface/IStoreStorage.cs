@@ -6,6 +6,6 @@ namespace BookStore.Core
 {
     public interface IStoreStorage
     {
-
+        Store GetStore(IStoreStorage store);
     }
 }

@@ -6,14 +6,8 @@ namespace BookStore.Core
 {
     public class Store : IStore
     {
-        #region Fields
-        private static IDictionary<IStoreStorage, Store> _pool;
-        #endregion
-
         #region Properties
-        public List<Member> Members { get; set; }
         public Category Category { get; set; }
-        protected static IDictionary<IStoreStorage, Store> Pool => _pool ?? (_pool = new Dictionary<IStoreStorage, Store>());
         #endregion
 
         #region Constructors
@@ -24,14 +18,12 @@ namespace BookStore.Core
         #endregion
 
         #region Functions
-        public static Store GetStore(IStoreStorage store)
+        public void CheckOut()
         {
-            if (!Pool.ContainsKey(store))
-                Pool.Add(store, new Store());
-            return Pool[store];
+            throw new NotImplementedException();
         }
 
-        public void CheckOut()
+        public void CheckIn()
         {
             throw new NotImplementedException();
         }

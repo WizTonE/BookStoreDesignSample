@@ -8,5 +8,6 @@ namespace BookStore.Core
     public interface IMember
     {
         MemberInfo Login(Member member);
+        void Pickup(Book book);
     }
 }

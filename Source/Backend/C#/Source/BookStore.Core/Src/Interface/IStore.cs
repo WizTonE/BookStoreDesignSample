@@ -6,6 +6,7 @@ namespace BookStore.Core
 {
     public interface IStore
     {
+        void CheckIn();
         void CheckOut();
     }
 }

@@ -14,11 +14,13 @@ namespace BookStore.API.Controllers
     {
         #region Properties
         protected IStore Store { get; set; }
+        protected IStoreStorage StoreStorage { get; set; }
         #endregion
 
-        public StoreController(IStore store)
+        public StoreController(IStoreStorage storeStorage)
         {
-            Store = store;
+            StoreStorage = storeStorage;
+            Store = storeStorage.GetStore(StoreStorage.)
         }
         // POST: api/Store
         [HttpPost]
